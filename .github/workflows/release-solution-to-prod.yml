@@ -33,7 +33,7 @@ on:
 
 env:
 #edit your values here
-  BUILD_ENVIRONMENT_URL: https://trailenvcrm002.crm.dynamics.com/
+  BUILD_ENVIRONMENT_URL: https://massived30.crm.dynamics.com
   PRODUCTION_ENVIRONMENT_URL: https://massived30.crm.dynamics.com
   USERNAME: harveyspector@massived30.onmicrosoft.com
 
