@@ -34,7 +34,7 @@ on:
 env:
 #edit your values here
   BUILD_ENVIRONMENT_URL: https://trailenvcrm002.crm.dynamics.com
-  PRODUCTION_ENVIRONMENT_URL: https://trailenvcrm002.crm.dynamics.com
+  PRODUCTION_ENVIRONMENT_URL: https://trialenvcrm003.crm.dynamics.com/
   USERNAME: karthik@trailenvcrm001.onmicrosoft.com
 
 jobs:
