@@ -24,10 +24,10 @@ on:
        required: true
        default: solutions/
 
-env:
+#env:
 #edit your values here
-  ENVIRONMENT_URL: https://trailenvcr1m002.crm.dynamics.com/
-  USERNAME: karthik@trailenvcrm0011.onmicrosoft.com
+  #ENVIRONMENT_URL: https://trailenvcr1m002.crm.dynamics.com/
+  #USERNAME: karthik@trailenvcrm0011.onmicrosoft.com
 
 
 jobs:
