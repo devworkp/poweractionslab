@@ -67,15 +67,15 @@ jobs:
         user-name: ${{env.USERNAME}}
         password-secret: ${{ secrets.password }}
 
-    - name: export-solution action
+    - name: Export solution as managed
       uses: microsoft/powerplatform-actions/export-solution@0.4.0
       with:
         environment-url: ${{env.BUILD_ENVIRONMENT_URL}}
         user-name: ${{env.USERNAME}}
         password-secret: ${{ secrets.password }}
         solution-name: ${{ github.event.inputs.solution_name }}
-        solution-output-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
-
+        managed: true
+        solution-output-file: ${{ github.event.inputs.solution_shipping_folder}}/${{ github.event.inputs.solution_name }}.zip
 
     - name: unpack-solution action
       uses: microsoft/powerplatform-actions/unpack-solution@0.4.0
