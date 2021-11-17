@@ -26,8 +26,8 @@ on:
 
 env:
 #edit your values here
-  ENVIRONMENT_URL: https://trailenvcrm002.crm.dynamics.com/
-  USERNAME: karthik@trailenvcrm001.onmicrosoft.com
+  ENVIRONMENT_URL: https://trailenvcr1m002.crm.dynamics.com/
+  USERNAME: karthik@trailenvcrm0011.onmicrosoft.com
 
 
 jobs:
@@ -44,15 +44,15 @@ jobs:
     - name: who-am-i action
       uses: microsoft/powerplatform-actions/who-am-i@0.4.0
       with:
-        environment-url: ${{env.ENVIRONMENT_URL}}
-        user-name: ${{env.USERNAME}}
+        environment-url: ${{secrets.devurl}}
+        user-name: ${{secrets.devusername}}
         password-secret: ${{ secrets.devpassword }}
 
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@0.4.0
       with:
-        environment-url: ${{env.ENVIRONMENT_URL}}
-        user-name: ${{env.USERNAME}}
+        environment-url: ${{secrets.devurl}}
+        user-name: ${{secrets.devusername}}
         password-secret: ${{ secrets.devpassword }}
         solution-name: ${{ github.event.inputs.solution_name }}
         solution-output-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
