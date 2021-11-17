@@ -84,7 +84,6 @@ jobs:
         password-secret: ${{ secrets.password }}
         solution-name: ${{ github.event.inputs.solution_name }}
         solution-output-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
-	environment-url: ${{env.ENVIRONMENT_URL}}
 
     - name: unpack-solution action
       uses: microsoft/powerplatform-actions/unpack-solution@0.4.0
