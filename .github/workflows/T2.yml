@@ -1,5 +1,3 @@
-
-
 name: T2
 # prepare for releasing to prod:
 #   convert solution to managed (using a build PowerPlatform environment for the conversion)
