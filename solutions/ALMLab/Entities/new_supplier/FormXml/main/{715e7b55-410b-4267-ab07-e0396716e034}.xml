@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <systemform>
-    <formid>{c5e966bd-d45b-4c70-8828-99e2a2d7b108}</formid>
+    <formid>{715e7b55-410b-4267-ab07-e0396716e034}</formid>
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
     <form>
       <tabs>
-        <tab verticallayout="true" id="{09f420d2-233e-4517-a95a-d8de90f81c9d}" IsUserDefined="1">
+        <tab verticallayout="true" id="{404f069d-5a35-4c8c-9dc3-3efd202e50af}" IsUserDefined="1">
           <labels>
             <label description="General" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section showlabel="false" showbar="false" IsUserDefined="0" id="{2f51750e-c5a7-49c1-a8e1-732d61a37da5}">
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{79106f87-ca1b-4964-885c-ce30c871280b}">
                   <labels>
                     <label description="General" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{5e7027de-53c4-405f-a850-c5bbff6d79fa}">
+                      <cell id="{7b87846b-1a4b-4caf-917c-41586d9d238f}">
                         <labels>
                           <label description="Name" languagecode="1033" />
                         </labels>
@@ -28,19 +28,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{ecb8bba5-8d76-48b9-a7cd-79546416a49c}">
+                      <cell id="{9bce06a5-dce8-266c-0339-c5a6e28783e2}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Owner" languagecode="1033" />
+                          <label description="Location" languagecode="1033" />
                         </labels>
-                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{a5ec0ee9-2dcb-35c7-abcc-16d657dd2559}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Supplier Code" languagecode="1033" />
-                        </labels>
-                        <control id="new_suppliercode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_suppliercode" disabled="false" />
+                        <control id="new_location" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_location" disabled="false" />
                       </cell>
                     </row>
                   </rows>

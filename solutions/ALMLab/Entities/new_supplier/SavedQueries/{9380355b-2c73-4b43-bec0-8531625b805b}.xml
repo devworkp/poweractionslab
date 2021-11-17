@@ -6,29 +6,31 @@
     <isquickfindquery>0</isquickfindquery>
     <isprivate>0</isprivate>
     <isdefault>1</isdefault>
-    <savedqueryid>{d7ae4aa0-c5ed-4dd4-9f1c-2841f07eb8bb}</savedqueryid>
+    <savedqueryid>{9380355b-2c73-4b43-bec0-8531625b805b}</savedqueryid>
     <layoutxml>
-      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
-        <row name="result" id="new_supplierid">
+      <grid name="new_suppliers" jump="new_name" select="1" icon="1" preview="0">
+        <row name="new_supplier" id="new_supplierid">
           <cell name="new_name" width="300" />
           <cell name="createdon" width="125" />
         </row>
       </grid>
     </layoutxml>
-    <querytype>1</querytype>
+    <querytype>64</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical">
         <entity name="new_supplier">
           <attribute name="new_supplierid" />
           <attribute name="new_name" />
           <attribute name="createdon" />
-          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
         </entity>
       </fetch>
     </fetchxml>
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="Supplier Advanced Find View" languagecode="1033" />
+      <LocalizedName description="Supplier Lookup View" languagecode="1033" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

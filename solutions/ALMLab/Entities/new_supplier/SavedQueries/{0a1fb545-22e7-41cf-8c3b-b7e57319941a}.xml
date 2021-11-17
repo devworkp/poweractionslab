@@ -6,16 +6,16 @@
     <isquickfindquery>0</isquickfindquery>
     <isprivate>0</isprivate>
     <isdefault>1</isdefault>
-    <savedqueryid>{d4e813ec-b474-4265-aaae-0ded04657ea9}</savedqueryid>
+    <savedqueryid>{0a1fb545-22e7-41cf-8c3b-b7e57319941a}</savedqueryid>
     <layoutxml>
-      <grid name="new_suppliers" jump="new_name" select="1" icon="1" preview="1">
-        <row name="new_supplier" id="new_supplierid">
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_supplierid">
           <cell name="new_name" width="300" />
           <cell name="createdon" width="125" />
         </row>
       </grid>
     </layoutxml>
-    <querytype>2</querytype>
+    <querytype>0</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical">
         <entity name="new_supplier">
@@ -31,7 +31,7 @@
     </fetchxml>
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="Supplier Associated View" languagecode="1033" />
+      <LocalizedName description="Active Suppliers" languagecode="1033" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

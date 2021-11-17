@@ -47,9 +47,11 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Created By" languagecode="1033" />
+            <displayname description="Autor" languagecode="3082" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier of the user who created the record." languagecode="1033" />
+            <Description description="Identificador único del usuario que creó el registro." languagecode="3082" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="CreatedOn">
@@ -87,9 +89,11 @@
           <Behavior>1</Behavior>
           <displaynames>
             <displayname description="Created On" languagecode="1033" />
+            <displayname description="Fecha de creación" languagecode="3082" />
           </displaynames>
           <Descriptions>
             <Description description="Date and time when the record was created." languagecode="1033" />
+            <Description description="Fecha y hora de creación del registro." languagecode="3082" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="CreatedOnBehalfBy">
@@ -126,9 +130,11 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Created By (Delegate)" languagecode="1033" />
+            <displayname description="Autor (delegado)" languagecode="3082" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier of the delegate user who created the record." languagecode="1033" />
+            <Description description="Identificador único del usuario delegado que creó el registro." languagecode="3082" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ImportSequenceNumber">
@@ -166,9 +172,11 @@
           <MaxValue>2147483647</MaxValue>
           <displaynames>
             <displayname description="Import Sequence Number" languagecode="1033" />
+            <displayname description="Número de secuencia de importación" languagecode="3082" />
           </displaynames>
           <Descriptions>
             <Description description="Sequence number of the import that created this record." languagecode="1033" />
+            <Description description="Número de secuencia de la importación que creó este registro." languagecode="3082" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ModifiedBy">
@@ -205,9 +213,11 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Modified By" languagecode="1033" />
+            <displayname description="Modificado por" languagecode="3082" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier of the user who modified the record." languagecode="1033" />
+            <Description description="Identificador único del usuario que modificó el registro." languagecode="3082" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ModifiedOn">
@@ -245,9 +255,11 @@
           <Behavior>1</Behavior>
           <displaynames>
             <displayname description="Modified On" languagecode="1033" />
+            <displayname description="Fecha de modificación" languagecode="3082" />
           </displaynames>
           <Descriptions>
             <Description description="Date and time when the record was modified." languagecode="1033" />
+            <Description description="Fecha y hora de modificación del registro." languagecode="3082" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="ModifiedOnBehalfBy">
@@ -284,9 +296,51 @@
           <LookupTypes />
           <displaynames>
             <displayname description="Modified By (Delegate)" languagecode="1033" />
+            <displayname description="Modificado por (delegado)" languagecode="3082" />
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier of the delegate user who modified the record." languagecode="1033" />
+            <Description description="Identificador único del usuario delegado que modificó el registro." languagecode="3082" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="new_Location">
+          <Type>nvarchar</Type>
+          <Name>new_location</Name>
+          <LogicalName>new_location</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <Format>text</Format>
+          <MaxLength>100</MaxLength>
+          <Length>200</Length>
+          <displaynames>
+            <displayname description="Location" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="new_name">
@@ -329,46 +383,6 @@
             <Description description="The name of the custom entity." languagecode="1033" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="new_SupplierCode">
-          <Type>nvarchar</Type>
-          <Name>new_suppliercode</Name>
-          <LogicalName>new_suppliercode</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <Format>text</Format>
-          <MaxLength>100</MaxLength>
-          <Length>200</Length>
-          <displaynames>
-            <displayname description="Supplier Code" languagecode="1033" />
-          </displaynames>
-          <Descriptions>
-            <Description description="" languagecode="1033" />
-          </Descriptions>
-        </attribute>
         <attribute PhysicalName="new_supplierId">
           <Type>primarykey</Type>
           <Name>new_supplierid</Name>
@@ -404,6 +418,46 @@
           </displaynames>
           <Descriptions>
             <Description description="Unique identifier for entity instances" languagecode="1033" />
+            <Description description="Identificador único de instancias de entidad" languagecode="3082" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="OrganizationId">
+          <Type>lookup</Type>
+          <Name>organizationid</Name>
+          <LogicalName>organizationid</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>0</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>0</ValidForCreateApi>
+          <IsCustomField>0</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Organization Id" languagecode="1033" />
+            <displayname description="Id. de la organización" languagecode="3082" />
+          </displaynames>
+          <Descriptions>
+            <Description description="Unique identifier for the organization" languagecode="1033" />
+            <Description description="Identificador único de la organización." languagecode="3082" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OverriddenCreatedOn">
@@ -441,168 +495,11 @@
           <Behavior>1</Behavior>
           <displaynames>
             <displayname description="Record Created On" languagecode="1033" />
+            <displayname description="Fecha de creación del registro" languagecode="3082" />
           </displaynames>
           <Descriptions>
             <Description description="Date and time that the record was migrated." languagecode="1033" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="OwnerId">
-          <Type>owner</Type>
-          <Name>ownerid</Name>
-          <LogicalName>ownerid</LogicalName>
-          <RequiredLevel>systemrequired</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>0</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>1</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <LookupStyle>single</LookupStyle>
-          <LookupTypes>
-            <LookupType id="00000000-0000-0000-0000-000000000000">8</LookupType>
-            <LookupType id="00000000-0000-0000-0000-000000000000">9</LookupType>
-          </LookupTypes>
-          <displaynames>
-            <displayname description="Owner" languagecode="1033" />
-          </displaynames>
-          <Descriptions>
-            <Description description="Owner Id" languagecode="1033" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="OwningBusinessUnit">
-          <Type>lookup</Type>
-          <Name>owningbusinessunit</Name>
-          <LogicalName>owningbusinessunit</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>0</IsCustomField>
-          <IsAuditEnabled>0</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>1</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <LookupStyle>single</LookupStyle>
-          <LookupTypes />
-          <displaynames>
-            <displayname description="Owning Business Unit" languagecode="1033" />
-          </displaynames>
-          <Descriptions>
-            <Description description="Unique identifier for the business unit that owns the record" languagecode="1033" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="OwningTeam">
-          <Type>lookup</Type>
-          <Name>owningteam</Name>
-          <LogicalName>owningteam</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>0</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>0</ValidForCreateApi>
-          <IsCustomField>0</IsCustomField>
-          <IsAuditEnabled>0</IsAuditEnabled>
-          <IsLogical>1</IsLogical>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <LookupStyle>single</LookupStyle>
-          <LookupTypes />
-          <displaynames>
-            <displayname description="Owning Team" languagecode="1033" />
-          </displaynames>
-          <Descriptions>
-            <Description description="Unique identifier for the team that owns the record." languagecode="1033" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="OwningUser">
-          <Type>lookup</Type>
-          <Name>owninguser</Name>
-          <LogicalName>owninguser</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>0</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>0</ValidForCreateApi>
-          <IsCustomField>0</IsCustomField>
-          <IsAuditEnabled>0</IsAuditEnabled>
-          <IsLogical>1</IsLogical>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <LookupStyle>single</LookupStyle>
-          <LookupTypes />
-          <displaynames>
-            <displayname description="Owning User" languagecode="1033" />
-          </displaynames>
-          <Descriptions>
-            <Description description="Unique identifier for the user that owns the record." languagecode="1033" />
+            <Description description="Fecha y hora de migración del registro." languagecode="3082" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="statecode">
@@ -641,28 +538,34 @@
             <IsCustomizable>1</IsCustomizable>
             <displaynames>
               <displayname description="Status" languagecode="1033" />
+              <displayname description="Estado" languagecode="3082" />
             </displaynames>
             <Descriptions>
               <Description description="Status of the Supplier" languagecode="1033" />
+              <Description description="Estado del Supplier" languagecode="3082" />
             </Descriptions>
             <states>
               <state value="0" defaultstatus="1" invariantname="Active">
                 <labels>
                   <label description="Active" languagecode="1033" />
+                  <label description="Activo" languagecode="3082" />
                 </labels>
               </state>
               <state value="1" defaultstatus="2" invariantname="Inactive">
                 <labels>
                   <label description="Inactive" languagecode="1033" />
+                  <label description="Inactivo" languagecode="3082" />
                 </labels>
               </state>
             </states>
           </optionset>
           <displaynames>
             <displayname description="Status" languagecode="1033" />
+            <displayname description="Estado" languagecode="3082" />
           </displaynames>
           <Descriptions>
             <Description description="Status of the Supplier" languagecode="1033" />
+            <Description description="Estado del Supplier" languagecode="3082" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="statuscode">
@@ -701,28 +604,34 @@
             <IsCustomizable>1</IsCustomizable>
             <displaynames>
               <displayname description="Status Reason" languagecode="1033" />
+              <displayname description="Razón para el estado" languagecode="3082" />
             </displaynames>
             <Descriptions>
               <Description description="Reason for the status of the Supplier" languagecode="1033" />
+              <Description description="Razón para el estado del Supplier" languagecode="3082" />
             </Descriptions>
             <statuses>
               <status value="1" state="0">
                 <labels>
                   <label description="Active" languagecode="1033" />
+                  <label description="Activo" languagecode="3082" />
                 </labels>
               </status>
               <status value="2" state="1">
                 <labels>
                   <label description="Inactive" languagecode="1033" />
+                  <label description="Inactivo" languagecode="3082" />
                 </labels>
               </status>
             </statuses>
           </optionset>
           <displaynames>
             <displayname description="Status Reason" languagecode="1033" />
+            <displayname description="Razón para el estado" languagecode="3082" />
           </displaynames>
           <Descriptions>
             <Description description="Reason for the status of the Supplier" languagecode="1033" />
+            <Description description="Razón para el estado del Supplier" languagecode="3082" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="TimeZoneRuleVersionNumber">
@@ -759,9 +668,11 @@
           <MaxValue>2147483647</MaxValue>
           <displaynames>
             <displayname description="Time Zone Rule Version Number" languagecode="1033" />
+            <displayname description="Número de versión de regla de zona horaria" languagecode="3082" />
           </displaynames>
           <Descriptions>
             <Description description="For internal use only." languagecode="1033" />
+            <Description description="Solo para uso interno." languagecode="3082" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="UTCConversionTimeZoneCode">
@@ -798,9 +709,11 @@
           <MaxValue>2147483647</MaxValue>
           <displaynames>
             <displayname description="UTC Conversion Time Zone Code" languagecode="1033" />
+            <displayname description="Código de zona horaria de conversión UTC" languagecode="3082" />
           </displaynames>
           <Descriptions>
             <Description description="Time zone code that was in use when the record was created." languagecode="1033" />
+            <Description description="Código de la zona horaria en uso cuando se creó el registro." languagecode="3082" />
           </Descriptions>
         </attribute>
       </attributes>
@@ -820,7 +733,7 @@
       <IsSLAEnabled>0</IsSLAEnabled>
       <IsDocumentRecommendationsEnabled>0</IsDocumentRecommendationsEnabled>
       <IsBPFEntity>0</IsBPFEntity>
-      <OwnershipTypeMask>UserOwned</OwnershipTypeMask>
+      <OwnershipTypeMask>OrgOwned</OwnershipTypeMask>
       <IsAuditEnabled>0</IsAuditEnabled>
       <IsRetrieveAuditEnabled>0</IsRetrieveAuditEnabled>
       <IsRetrieveMultipleAuditEnabled>0</IsRetrieveMultipleAuditEnabled>

@@ -6,7 +6,7 @@
     <isquickfindquery>0</isquickfindquery>
     <isprivate>0</isprivate>
     <isdefault>1</isdefault>
-    <savedqueryid>{aae20e99-d246-ec11-8c62-0022480b6168}</savedqueryid>
+    <savedqueryid>{f348e924-d246-ec11-8c62-000d3af2da42}</savedqueryid>
     <querytype>8192</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical" output-format="xml-platform">
@@ -14,17 +14,16 @@
           <attribute name="new_supplierid" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
-            <condition attribute="ownerid" operator="eq-userid" />
           </filter>
         </entity>
       </fetch>
     </fetchxml>
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="My Suppliers" languagecode="1033" />
+      <LocalizedName description="Suppliers" languagecode="1033" />
     </LocalizedNames>
     <Descriptions>
-      <Description description="Active Suppliers owned by me" languagecode="1033" />
+      <Description description="All active Suppliers" languagecode="1033" />
     </Descriptions>
   </savedquery>
 </savedqueries>

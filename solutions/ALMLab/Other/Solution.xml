@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.21102.143" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.21111.129" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>ALMLab</UniqueName>
     <LocalizedNames>
@@ -9,9 +9,9 @@
     <Version>1.0.0.0</Version>
     <Managed>0</Managed>
     <Publisher>
-      <UniqueName>DefaultPublishertrailenvcrm002</UniqueName>
+      <UniqueName>DefaultPublisherorg0fbb2507</UniqueName>
       <LocalizedNames>
-        <LocalizedName description="Default Publisher for trailenvcrm002" languagecode="1033" />
+        <LocalizedName description="Default Publisher for org0fbb2507" languagecode="1033" />
       </LocalizedNames>
       <Descriptions>
         <Description description="Default publisher for this organization" languagecode="1033" />

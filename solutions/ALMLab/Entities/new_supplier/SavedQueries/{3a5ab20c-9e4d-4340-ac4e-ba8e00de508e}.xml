@@ -3,10 +3,10 @@
   <savedquery>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>0</CanBeDeleted>
-    <isquickfindquery>0</isquickfindquery>
+    <isquickfindquery>1</isquickfindquery>
     <isprivate>0</isprivate>
-    <isdefault>0</isdefault>
-    <savedqueryid>{7a60a761-bbc4-4ca6-a0dd-807ae2d9faa6}</savedqueryid>
+    <isdefault>1</isdefault>
+    <savedqueryid>{3a5ab20c-9e4d-4340-ac4e-ba8e00de508e}</savedqueryid>
     <layoutxml>
       <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
         <row name="result" id="new_supplierid">
@@ -15,7 +15,7 @@
         </row>
       </grid>
     </layoutxml>
-    <querytype>0</querytype>
+    <querytype>4</querytype>
     <fetchxml>
       <fetch version="1.0" mapping="logical">
         <entity name="new_supplier">
@@ -24,14 +24,17 @@
           <attribute name="createdon" />
           <order attribute="new_name" descending="false" />
           <filter type="and">
-            <condition attribute="statecode" operator="eq" value="1" />
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="new_name" operator="like" value="{0}" />
           </filter>
         </entity>
       </fetch>
     </fetchxml>
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="Inactive Suppliers" languagecode="1033" />
+      <LocalizedName description="Quick Find Active Suppliers" languagecode="1033" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

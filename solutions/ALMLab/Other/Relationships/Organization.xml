@@ -1,21 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <EntityRelationship Name="team_new_supplier">
+  <EntityRelationship Name="organization_new_supplier">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>new_supplier</ReferencingEntityName>
-    <ReferencedEntityName>Team</ReferencedEntityName>
+    <ReferencedEntityName>Organization</ReferencedEntityName>
     <CascadeAssign>NoCascade</CascadeAssign>
     <CascadeDelete>NoCascade</CascadeDelete>
     <CascadeReparent>NoCascade</CascadeReparent>
     <CascadeShare>NoCascade</CascadeShare>
     <CascadeUnshare>NoCascade</CascadeUnshare>
-    <ReferencingAttributeName>OwningTeam</ReferencingAttributeName>
+    <ReferencingAttributeName>OrganizationId</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
-        <Description description="Unique identifier for the team that owns the record." languagecode="1033" />
+        <Description description="Unique identifier for the organization" languagecode="1033" />
+        <Description description="Identificador único de la organización." languagecode="3082" />
       </Descriptions>
     </RelationshipDescription>
   </EntityRelationship>
