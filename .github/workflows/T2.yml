@@ -37,6 +37,15 @@ on:
        description: 'folder where the released binaries are going to be hosted *do not change*'
        required: true
        default: out/release
+      solution_exported_folder:
+        description: 'folder name for staging the exported solution *do not change*'
+        required: true
+        default: out/exported/
+      solution_folder:
+        description: 'staging the unpacked solution folder before check-in *do not change*'
+        required: true
+        default: out/solutions/
+
   release:
     types: [created]
   
@@ -77,7 +86,7 @@ jobs:
         password-secret: ${{ secrets.password }}
         solution-name: ${{ github.event.inputs.solution_name }}
         solution-output-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
-
+	environment-url: ${{env.ENVIRONMENT_URL}}
 
     - name: unpack-solution action
       uses: microsoft/powerplatform-actions/unpack-solution@0.4.0
