@@ -24,12 +24,14 @@ on:
        required: true
        default: solutions/
 
-#env:
+env:
 #edit your values here
   #ENVIRONMENT_URL: https://trailenvcr1m002.crm.dynamics.com/
   #USERNAME: karthik@trailenvcrm0011.onmicrosoft.com
-
-
+  ENVIRONMENT_URL: https://devwork173.crm8.dynamics.com/
+  CLIENT_ID: 3a06541f-08f6-4e3d-98a9-0f1273c69ded
+  TENANT_ID: 00e2b26f-9c7a-40bd-8796-c5ac71c37ec1
+  CLIENT_SECRET: RJ57Q~bfHjKKP2usKIsfmzEa5rO6Z4yuZZZKl
 jobs:
   export-from-dev:
     runs-on: windows-latest
@@ -44,16 +46,24 @@ jobs:
     - name: who-am-i action
       uses: microsoft/powerplatform-actions/who-am-i@0.4.0
       with:
-        environment-url: ${{secrets.devurl}}
-        user-name: ${{secrets.devusername}}
-        password-secret: ${{ secrets.devpassword }}
+        #environment-url: ${{secrets.devurl}}
+        #user-name: ${{secrets.devusername}}
+        #password-secret: ${{ secrets.devpassword }}
+        environment-url: ${{env.ENVIRONMENT_URL}}
+        app-id: ${{env.CLIENT_ID}}
+        client-secret: ${{ env.CLIENT_SECRET }}
+        tenant-id: ${{env.TENANT_ID}}
 
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@0.4.0
       with:
-        environment-url: ${{secrets.devurl}}
-        user-name: ${{secrets.devusername}}
-        password-secret: ${{ secrets.devpassword }}
+        #environment-url: ${{secrets.devurl}}
+        #user-name: ${{secrets.devusername}}
+        #password-secret: ${{ secrets.devpassword }}
+        environment-url: ${{env.ENVIRONMENT_URL}}
+        app-id: ${{env.CLIENT_ID}}
+        client-secret: ${{ env.CLIENT_SECRET }}
+        tenant-id: ${{env.TENANT_ID}}
         solution-name: ${{ github.event.inputs.solution_name }}
         solution-output-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
 
