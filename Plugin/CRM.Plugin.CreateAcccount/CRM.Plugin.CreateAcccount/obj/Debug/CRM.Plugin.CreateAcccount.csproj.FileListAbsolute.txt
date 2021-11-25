@@ -1,0 +1,8 @@
+D:\Devendra\training\Plugin\Work-1\CRM.Plugin.CreateAcccount\CRM.Plugin.CreateAcccount\bin\Debug\CRM.Plugin.CreateAcccount.dll
+D:\Devendra\training\Plugin\Work-1\CRM.Plugin.CreateAcccount\CRM.Plugin.CreateAcccount\bin\Debug\CRM.Plugin.CreateAcccount.pdb
+D:\Devendra\training\Plugin\Work-1\CRM.Plugin.CreateAcccount\CRM.Plugin.CreateAcccount\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\Devendra\training\Plugin\Work-1\CRM.Plugin.CreateAcccount\CRM.Plugin.CreateAcccount\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\Devendra\training\Plugin\Work-1\CRM.Plugin.CreateAcccount\CRM.Plugin.CreateAcccount\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\Devendra\training\Plugin\Work-1\CRM.Plugin.CreateAcccount\CRM.Plugin.CreateAcccount\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\Devendra\training\Plugin\Work-1\CRM.Plugin.CreateAcccount\CRM.Plugin.CreateAcccount\obj\Debug\CRM.Plugin.CreateAcccount.dll
+D:\Devendra\training\Plugin\Work-1\CRM.Plugin.CreateAcccount\CRM.Plugin.CreateAcccount\obj\Debug\CRM.Plugin.CreateAcccount.pdb
